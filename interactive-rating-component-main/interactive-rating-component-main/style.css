@@ -1,0 +1,91 @@
+*{
+    border: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spline Sans Mono', monospace;
+}
+#star-icon{
+    background-color:hsl(216, 8%, 23%) ;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+}
+#star-icon #fa{
+    color: hsl(25, 97%, 53%);
+    padding: 10px;
+    
+}
+.star-card{
+    background-color: hsl(213, 19%, 18%);
+    width:25%;
+    height: fit-content;
+    border-radius: 10px;
+    margin:0 auto;
+    position: absolute;
+    top: 30%;
+}
+.card-body{
+    padding:0  30px;
+}
+.card-body h2{
+    color: hsl(0, 0%, 100%);
+}
+.card-body p{
+    color:hsl(217, 12%, 63%);
+}
+.rateing-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.rateing-div p{
+    color: hsl(0, 0%, 100%);
+    width: max-content;
+    height: max-content;
+    border-radius: 48%;
+    padding: 15px;
+
+    background-color:#38383e;
+}
+.rateing-div p > i{
+   display: none;
+}
+.rateing-div p:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+
+}
+.rateing-div p:hover i{
+    display: block;
+    
+    
+}
+.rateing-div p:hover span{
+    display: none;
+
+    
+
+}
+.btn-primary{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.btn-primary:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%) ;
+    transition: 0.5s;
+}
