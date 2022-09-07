@@ -1,0 +1,47 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card{
+    width: 20%;
+    margin: auto;
+    border-radius: 15px;
+    
+    top: 10%;
+    left: 40%;
+
+    background-color:  hsl(0, 0%, 100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-qr{
+    margin: 10px;
+}
+.card-qr img{
+    width: 100%;
+    border-radius: 10px; 
+    border-radius: 10px;
+}
+.card-title{
+    text-align: center;
+    font-weight: 1500;
+}
+.card-text{
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    width: 60%;
+    margin: auto;
+    color: hsl(0, 0%, 52%);
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 675px) {
+    .card{
+        width: 95%;
+        margin: auto;
+        left: auto;
+    }
+    .card-text{
+        width: 80%;
+    }
+}
+    
