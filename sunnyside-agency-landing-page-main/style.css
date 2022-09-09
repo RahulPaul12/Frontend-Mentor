@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    
+}
+.navlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.5%;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 30%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    padding-right: 10px;
+    
+}
+a:hover{
+    color: #7E88C3;
+    background-color: white;
+    border-radius: 70px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.banner h1{
+    font-size: 3rem;
+    font-weight:bolder;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+}
+.transform , .stand-out{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.transform-text,.stand-text, .photography-text,.graphic-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 60%;
+    margin: auto;
+    margin-left: 5rem;
+    align-items: flex-start;
+
+    padding: 2rem;
+    font-size: 1rem;  
+}
+.transform-text h2{
+   font-size: 2rem;
+   font-weight: bolder;
+}
+.btn{
+    font-weight: bolder;
+    padding-top: 1rem;
+    border: none;
+    background-color: white;
+    box-shadow:  0px 5px rgb(255, 238, 0)
+}
+.left{
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: Cover;
+}
+.right{
+    background-image: url('./images/desktop/image-photography.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photography-text,.graphic-text{
+    align-items: center;
+    text-align: center;
+    margin-top: 20rem;
+}
+.testimonial{
+    background-color: #ffeaea;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.testimonial img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.testimonial h2{
+    color: #8a8888;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    margin: 3.5rem 0 15%;
+}
+.testimonial-comment{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.testimonial-body {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.testimonial-text span{
+    color:rgb(132, 129, 129)
+}
+.displayimage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.displayimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer{
+    text-align: center;
+    padding: 5rem 0;
+    background-color: hsl(168, 34%, 41%);
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97.5%;
+    padding: 1rem;
+
+}
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 30%;
+}
+.footer-nav ul p a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    padding-right: 10px;
+    
+}
+.footer-nav ul p a:hover{
+    color: #e7e8f3;
+
+}
+.icon img:hover{
+     color: white;
+}
+.hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) and (min-width:200px){
+   .navbar{
+         position: fixed;
+         left: -100%;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(235, 236, 232);
+        transition: 0.3s;
+        top: 5rem;
+
+   }
+   .navbar a{
+    color: black;
+    
+   }
+   .active{
+      left: 0;
+}
+   .navlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+   .hamburger{
+       display: block;
+       
+       top: 0;
+       right: 10px;
+       transform: translate(-100%,60%);
+       font-size: 1.8rem;
+       cursor: pointer;
+   }
+   .transform {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    
+   
+}
+.stand-out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.transform-text,.stand-text{
+    margin:auto;
+    text-align: center;
+    padding: 1rem 0;
+    align-items: center;
+    width: 80%;
+}
+.banner h1{
+    font-size: 2rem;
+}
+.left{
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: Cover;
+    background-position: center;
+}
+.right{
+    background-image: url('./images/desktop/image-photography.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photography-text,.graphic-text{
+    align-items: center;
+    text-align: center;
+    margin-top: 20rem;
+    justify-content: center;
+    margin-left: auto;
+}
+.testimonial h2{
+    color: #8a8888;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin: 3.5rem 0 15%;
+}
+.testimonial-comment{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.displayimage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding:1rem;
+
+}
+    
+}
