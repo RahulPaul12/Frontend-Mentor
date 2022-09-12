@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+
+    width: 30%;
+    margin:0 auto;
+    margin-top:-100px;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    margin-left: 50%;
+    background-color: white;
+}
+.card-img{
+    width:100%;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+    text-align: center;
+}
+.card-body h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.card-body p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 30px;
+}
+.card-body-plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 50px;
+    background-color:rgb(234, 239, 239);
+    border-radius: 10px;
+}
+
+.card-body-plan p, .card-body-plan h4{
+    margin-top: 2px;
+}
+.card-body-plan button{
+    border: none;
+    
+}
+.card-body-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 50px;
+}
+.card-body-btn button:first-child{
+    border: none;
+    background-color: hsl(228, 67%, 45%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+.card-body-btn button:last-child{
+    border: none;
+    background-color: white;
+    color: hsl(228, 67%, 45%);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card{
+        width: 80%;
+        margin-top: -50%;
+    }
+    .card-body-plan{
+        margin: 1rem 20px;
+    }
+
+}
+    
