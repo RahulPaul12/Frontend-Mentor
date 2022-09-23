@@ -1,0 +1,67 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: 20vh auto;
+    color: white;
+}
+.left{
+    background-color: hsl(31, 77%, 52%);
+    padding: 4rem;
+    border-radius: 10px 0 0 10px;
+}
+.middle{
+    background-color: hsl(184, 100%, 22%);
+    padding: 4rem;
+}
+.right{
+    background-color: hsl(179, 100%, 13%);
+    padding: 4rem;
+    border-radius: 0 10px 10px 0;
+}
+.left button{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px 0 0 0;
+    font-size: 1rem;
+    color: hsl(31, 77%, 52%);
+}
+.middle button{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px 0 0 0;
+    font-size: 1rem;
+    color:  hsl(184, 100%, 22%);
+}
+.right button{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px 0 0 0;
+    font-size: 1rem;
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media  screen and (max-width: 768px) {
+    .main{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .left{
+        border-radius: 10px 10px 0 0;
+    }
+    .middle{
+        border-radius: 0;
+    }
+    .right{
+        border-radius: 0 0 10px 10px;
+    }
+}
+    
+}
